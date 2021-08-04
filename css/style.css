@@ -1,0 +1,814 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li, h1,h2,h3,h4,h5, p {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Заголовок сайта - начало */
+
+.header {
+    margin-bottom: 44px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+
+.header__logo {
+    width: 182px;
+    height: 36px;
+}
+
+.header__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.header__search {
+    outline: none;
+    border: none;
+    width: 320px;
+    font-size: 16px;
+    line-height: 19px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 6px;
+    margin-right: 32px;
+    color: #828282;
+}
+
+
+
+.header__search--btn {
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    color: #e5261e;
+    background-color: #fff;
+}
+
+.header__search--btn:hover {
+    transition: all .3s;
+    padding: 10px 32px;
+    background-color: #e5261e;
+    color: #fff;
+}
+
+.header__info {
+    display: flex;
+}
+
+
+
+.header__log-in {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 32px;
+    background-color: #e5261e;
+    color: #fff;
+}
+
+.header__btn-exit {
+    display: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 16px;
+    background-color: #fff;
+    color: #e5261e;
+}
+
+/* Заголовок сайта - начало */
+
+
+
+/* Переключение между разделами - начало */
+
+.filmstvshow {
+    margin-bottom: 32px;
+}
+
+
+.filmstvshow__content {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.btn-checked {
+    border: none;
+    outline: none;
+    font-size: 28px;
+    line-height: 33px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.btn-checked:not(:last-child) {
+    margin-right: 25px;
+}
+
+
+.filmstvshow--active {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+}
+
+
+.films:hover {
+    border-bottom: 2px solid #E5261E;
+    transition: .4s ease color;
+    color: #E5261E;
+}
+
+.tvshow:hover {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+    transition: .4s ease color;
+}
+
+/* Переключение между разделами - конец */
+
+
+
+
+/* раздел Новинки - начало */
+
+.choice-films {
+    margin-bottom: 32px;
+}
+
+
+.new-films {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+
+
+.choice-films__content {
+    display: flex;
+    /* flex: 0 1 33.3333%; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.choice-films__content--item {
+    width: 280px;
+    margin-bottom: 40px;
+}
+
+
+.choice-film__link {
+    display: block;
+    position: relative;
+}
+
+
+.choice-films__content--img:hover {
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+	transform: scale(1.1);
+    margin-bottom: 16px;
+    border-radius: 9px;
+}
+
+
+
+.name-film__descr {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 370px;
+    opacity: 0;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 20px;
+    color: #F2F2F2;
+}
+
+
+.choice-films__content--item:hover .name-film__descr {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+/* раздел Новинки - конец */
+
+
+
+/* раздел жанры - начало */
+.genres {
+    margin-bottom: 72px;
+}
+
+
+.genres-films {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+
+.genres-films__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.genres-films__content--item {
+    margin-bottom: 30px;
+}
+
+.genres-films__link {
+    display: block;
+    position: relative;
+}
+
+.orange {
+    width: 280px;
+    background-color: #F2C94C;
+}
+
+.red {
+    color: #F2994A;
+}
+
+.blue {
+    color: #56CCF2;
+}
+
+.black {
+    color: #828282;
+}
+
+.genres-films__link img {
+    display: block;
+    position: relative;
+}
+
+
+.genres-films__info {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+.genres-films__info img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+.name-genre {
+    color: #fff;
+}
+
+/* раздел жанры - конец */
+
+
+
+
+/* подвал - начало */
+.footer {
+    background-color: #f2f2f2;
+}
+
+
+.footer__content {
+    display: flex;
+    padding: 28px 0;
+    align-items: center;
+}
+
+
+.logo-company {
+    margin-right: 40px;
+}
+
+
+
+.footer__content--info {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.info--address {
+    padding-bottom: 6px;
+}
+
+
+.info--tel {
+    padding-bottom: 10px;
+}
+
+
+
+.info--link {
+    color: #1F4766;
+}
+
+/* подвал - конец */
+
+
+
+
+
+/* Раздел Телепередачи - начало */
+.tvchannel {
+    display: none;
+    margin-bottom: 72px;
+}
+
+
+.tvchannel__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tvchannel__content--item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 21px 0;
+    /* padding-left: 143px; */
+    background-color: #f2f2f2;
+}
+
+.tvchannel__content--item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
+.tvchannel__content--logo {
+    width: 260px;
+    text-align: center;
+    padding-left: 147px;
+    margin-right: 145px;
+    /* padding-right: 143px; */
+}
+
+
+.tvchannel__content--title {
+    text-align: left;
+    font-weight: 700;
+    padding-bottom: 17px;
+    color: #333;
+}
+
+
+
+.tvchannel__content--subtitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.tvchannel__content--new {
+    display: flex;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.tvchannel__content--new:hover {
+    color: #e5261e;
+    cursor: pointer;
+}
+
+
+.tvchannel__content--new:not(:last-child) {
+    padding-bottom: 12px;
+}
+
+.tvchannel__content--new-current {
+    color: #e5261e;
+}
+
+.tvchannel__content--time {
+    margin-right: 16px;
+}
+
+/* Раздел Телепередачи - конец */
+
+
+
+
+
+/* Модальное окно - начало */
+#forma {
+    display: none;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+
+
+#forma.open {
+    display: block;
+    /* z-index: 10000; */
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.popup_open {
+    display: block;
+    z-index: 1000;
+}
+
+.popup__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    max-width: 304px;
+    max-height: 394px;
+    width: 100%;
+  }
+
+.popup__close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+
+.popup__wrapper {
+    padding: 40px;
+}
+
+.popup__info {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.input--text {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-right: 15px;
+} 
+
+.input--text:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.popup__info--check {
+    color: #e5261e;
+}
+
+.checkbox--content {
+    margin-bottom: 111px;
+}
+
+.btn {
+    padding: 10px 32px;
+    color: #fff;
+    background-color: #e5261e;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    outline: none;
+}
+
+
+.btn-success:disabled {
+ opacity: 0.3;
+ pointer-events: none;
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/* Модальное окно - конец */
+
+
+
+
+
+/* Адаптив */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+
+    .choice-films__content--item:nth-child(1) {
+        width: 31%;
+        /* margin-right: 3px; */
+    }
+    .choice-films__content--item:nth-child(2) {
+        width: 31%;
+        /* margin-right: 3px; */
+    }
+    .choice-films__content--item:nth-child(3) {
+        width: 31%;
+    }
+    .choice-films__content--item:nth-child(4) {
+        width: 31%;
+    }
+
+    .choice-films__content--item img {
+        width: 100%;
+    }
+
+
+    .name-film__descr {
+        font-size: 28px;
+        line-height: 29px;
+        height: 90%;
+    }
+
+
+    .genres-films__content--item:nth-child(1) {
+        width: 31%;
+    }
+    .genres-films__content--item:nth-child(2) {
+        width: 31%;
+    }
+    .genres-films__content--item:nth-child(3) {
+        width: 31%;
+    }
+    .genres-films__content--item:nth-child(4) {
+        width: 31%;
+    }
+
+    .genres-films__link--logo {
+        width: 100%;
+    }
+
+    .genres-films__link--smile-img {
+        width: 25%;
+    }
+
+    .name-genre {
+        font-size: 30px;
+    }
+
+    .genres-films__info {
+        padding: 30px 0;
+    }
+
+}
+
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .tvchannel__content--item {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .tvchannel__content--logo {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .tvchannel__content--info {
+        text-align: center;
+    }
+
+    .header__search {
+        width: 220px;
+    }
+
+    .choice-films__content--item:nth-child(1) {
+        width: 48%;
+    }
+    .choice-films__content--item:nth-child(2) {
+        width: 48%;
+    }
+    .choice-films__content--item:nth-child(3) {
+        width: 48%;
+    }
+    .choice-films__content--item:nth-child(4) {
+        width: 48%;
+    }
+
+    .name-genre {
+        font-size: 35px;
+    }
+
+    .genres-films {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .genres-films__content--item:nth-child(1) {
+        width: 48%;
+    }
+    .genres-films__content--item:nth-child(2) {
+        width: 48%;
+    }
+    .genres-films__content--item:nth-child(3) {
+        width: 48%;
+    }
+    .genres-films__content--item:nth-child(4) {
+        width: 48%;
+    }
+
+    .genres-films__link--logo {
+        width: 100%;
+    }
+
+    .genres-films__info {
+        padding: 50px 0;
+    }
+
+    /* .genres-films__link img {
+        width: 100%;
+    } */
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+
+    .header__content {
+        position: relative;
+        margin-bottom: 200px;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 0;
+        top: 35px;
+    }
+
+    .header__input {
+        position: absolute;
+        top: 150px;
+    }
+
+    .header__log-in {
+        position: absolute;
+        right: 0;
+        top: 35px;
+    }
+
+    .header__logo {
+        margin-bottom: 50px;
+    }
+
+        .header__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .choice-films {
+        margin-bottom: 62px;
+    }
+
+    .choice-films__content--item:nth-child(1) {
+        width: 100%;
+    }
+    .choice-films__content--item:nth-child(2) {
+        width: 100%;
+    }
+    .choice-films__content--item:nth-child(3) {
+        width: 100%;
+    }
+    .choice-films__content--item:nth-child(4) {
+        width: 100%;
+    }
+
+
+    .name-film {
+        font-size: 45px;
+        line-height: 48px;
+        padding-bottom: 20px;
+    }
+
+    .name-film__descr {
+        font-size: 48px;
+        line-height: 48px;
+        height: 91%;
+    }
+
+    .genres-films {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .genres-films__content--item:nth-child(1) {
+        width: 100%;
+    }
+    .genres-films__content--item:nth-child(2) {
+        width: 100%;
+    }
+    .genres-films__content--item:nth-child(3) {
+        width: 100%;
+    }
+    .genres-films__content--item:nth-child(4) {
+        width: 100%;
+    }
+
+    .genres-films__info {
+        padding: 100px 0;
+    }
+
+
+}
+
+
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+}
